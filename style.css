@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(34, 34, 34);
+  font-size: 1.6rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 0.1rem solid black;
+  padding: 2rem;
+}
+h1 {
+  flex: 1;
+}
+input[type="text"] {
+  color: white;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background: transparent;
+  border-bottom: 0.1rem solid white;
+  margin-left: 2rem;
+  transition: 0.5s;
+}
+input[type="text"]:focus {
+  border: 0.1rem solid rgb(150, 144, 144);
+}
+
+input[type="submit"] {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  background: black;
+  color: white;
+}
+footer {
+  padding: 1rem;
+  color: black;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.movies {
+  margin: 1rem;
+  box-shadow: 0rem 0rem 1rem 0.2rem black;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  flex-basis: 20rem;
+}
+.movies:hover > img {
+  transform: scale(1.01);
+}
+
+.movies img {
+  max-width: 20rem;
+  transition: 0.3s;
+  margin-bottom: 0.1rem;
+}
+.movies h5 {
+  margin-bottom: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.2rem black;
+}
+.movies span {
+  text-shadow: 0.3rem 0.3rem 0.2rem black;
+}
+
+.description {
+  width: 55vw;
+  margin: auto;
+  color: white;
+}
+
+.description .margin {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid black;
+}
